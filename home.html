@@ -44,7 +44,7 @@
                     <img src="./hau-duy/anh/hau-duy2-07.png" alt="" class="img-nav2">
                 </div>
                 <img src="./hau-duy/anh/pic1-07.png" alt="" class="img-home1">
-                <img src="./hau-duy/anh/hau-duy-02.png" alt="" class="img-name1">
+                <img src="./hau-duy/anh/hau-duy-02.png " alt="" class="img-name1">
                 <ul>
                     <li><a href="#home" class="menu">Thư mời gửi cả nhà</a></li>
                     <li><a href="#info" class="menu">Ngày chúng mình kể chuyện</a></li>
@@ -266,7 +266,7 @@
                     <img src="./hau-duy/anh/hau-duy2-07.png" alt="" class="img-nav2">
                 </div>
                 <!-- <img src="./hau-duy/anh/tree1-07.png" alt="" class="img-rsvp1"> -->
-            <form action="" name="hau-duy">
+            <form action="" name="duy-hau">
                 <div class="feed-info">
                     <!-- <lable class="lb-form1">Xác nhận khách mời</lable>
                     <label for="" class="lb-dot"><i class="fa-solid fa-diamond"></i></label>
@@ -497,8 +497,8 @@
         </div>
     </div>
 <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxFNnnkgBR11AUFsFPYyxTYttobZMUxlzZJiacwjZ2BfaeHlPG_ok-cbf9b5RZCq3MB/exec';
-const form = document.forms['hau-duy'];
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwk7VGOPC8wQzDKf5gUfVUuBwfez1jYmBS-OWjtVCTtmtXgziDurFEGbR12v7dc8Jo/exec';
+const form = document.forms['duy-hau'];
 
 document.addEventListener('DOMContentLoaded', () => {
     const checkboxes = document.querySelectorAll('.box-feed-dichuyen');
@@ -521,57 +521,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Xử lý gửi form
     form.addEventListener('submit', e => {
-        e.preventDefault();
+    e.preventDefault();
 
-        document.getElementById('loading-container').style.display = 'flex';
+    document.getElementById('loading-container').style.display = 'flex';
 
-        fetch(scriptURL, {
-            method: 'POST',
-            body: new FormData(form)
-        })
-            .then(response => {
-                if (response.ok) {
-                    form.reset();
-                    document.getElementById('loading-container').style.display = 'none';
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Thành công',
-                        text: 'Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến Hậu và Duy rồi nhaa <3',
-                        imageWidth: 300,
-                        imageHeight: 200,
-                        confirmButtonText: 'ĐÓNG',
-                        background: '#f8f8f8',
-                        padding: '20px',
-                        customClass: {
-                            popup: 'custom-popup',
-                            title: 'custom-title',
-                            confirmButton: 'custom-confirm-button'
-                        },
-                        didOpen: () => {
-                            document.querySelector('.swal2-popup').style.borderRadius = '10px';
-                        }
-                    });
-                } else {
-                    document.getElementById('loading-container').style.display = 'none';
-                    Swal.fire({
-                        title: 'Oops!',
-                        text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
-                        icon: 'error',
-                        confirmButtonText: 'OK'
-                    });
+    // Gộp các checkbox được chọn thành chuỗi
+    const selectedValues = [...document.querySelectorAll('.box-feed-dichuyen')]
+        .filter(cb => cb.checked)
+        .map(cb => cb.value)
+        .join(', '); // Chuỗi kết quả: "Lựa chọn A, Lựa chọn B"
+
+    // Tạo mới FormData và ghi đè giá trị của checkbox
+    const formData = new FormData(form);
+    formData.set('XÁC NHẬN DI CHUYỂN', selectedValues); // Ghi đè trước khi gửi
+
+    fetch(scriptURL, {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        document.getElementById('loading-container').style.display = 'none';
+
+        if (response.ok) {
+            form.reset();
+            Swal.fire({
+                icon: 'success',
+                title: 'Thành công',
+                text: 'Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến Hậu và Duy rồi nhaa <3',
+                imageWidth: 300,
+                imageHeight: 200,
+                confirmButtonText: 'ĐÓNG',
+                background: '#f8f8f8',
+                padding: '20px',
+                customClass: {
+                    popup: 'custom-popup',
+                    title: 'custom-title',
+                    confirmButton: 'custom-confirm-button'
+                },
+                didOpen: () => {
+                    document.querySelector('.swal2-popup').style.borderRadius = '10px';
                 }
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                document.getElementById('loading-container').style.display = 'none';
-                Swal.fire({
-                    title: 'Oops!',
-                    text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
-                    icon: 'error',
-                    confirmButtonText: 'OK'
-                });
             });
+        } else {
+            Swal.fire({
+                title: 'Oops!',
+                text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+        }
+    })
+    .catch(error => {
+        console.error('Error!', error.message);
+        document.getElementById('loading-container').style.display = 'none';
+        Swal.fire({
+            title: 'Oops!',
+            text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
     });
+});
+
 });
 </script>
  <script>

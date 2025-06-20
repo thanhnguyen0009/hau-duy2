@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thông tin Open Graph cho ảnh đại diện -->
+    <!-- <meta property="og:image" content="https://yenstudio.com.vn/phuoc-hien.jpg" /> -->
+    <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
+    <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
+
+    <!-- Các thông tin khác cho Open Graph -->
+    <meta property="og:title" content="HẬU - DUY" />
+    <meta property="og:description" content="TRUNG HẬU - GIA DUY" />
+    <!-- <meta property="og:url" content="https://yenstudio.com.vn/phuoc-hien/thiepmoi.html" /> -->
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./hau-duy/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>TRUNG HẬU - GIA DUY</title>
+</head>
+<body>
+    <div id="loading-container" class="loading-container">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <div class="container-wrapper">
+              <div class="box-circle">
+                <div class="circle" id="musicCircle">
+                    <img src="./hau-duy/anh/play-07.png" alt="Music Icon" class="circle-image">
+                    <audio id="audio" src="./hau-duy/audio/Romantic Positive Wedding.wav" loop></audio>
+                </div>
+                <!-- <label for="audio" class="lb-circle">No Music? <br> Click Me</label> -->
+            </div>
+
+          <div class="navbar-menu">
+                <img src="./hau-duy/anh/logo-07.png" alt="" class="img-logo">
+                
+                <div class="box-name-navbar">
+                    <label for="" class="lb-name-navbar">TRUNG HẬU - GIA DUY</label>
+                    <label for="" class="lb-time-navbar">20.12.2025</label>
+                </div>
+            </div>
+            <ul>
+                    <li><a href="./home.html" class="menu">Thư mời gửi cả nhà</a></li>
+                    <li><a href="./info.html" class="menu">Ngày chúng mình kể chuyện</a></li>
+                    <li><a href="./story.html" class="menu">Chuyện chúng mình</a></li>
+                    <li><a href="./photo.html" class="menu">Vì chúng ta gìn giữ</a></li>
+                    <li><a href="./rsvp.html" class="menu">Xác nhận khách mời</a></li>
+                    <li><a href="./gift.html" class="menu">Quà từ người thương</a></li>
+                </ul>
+
+            <div class="content">
+           <div class="box-grid">
+        <div class="grid-img1">
+            <div class="grid-item"><img src="./hau-duy/anh/1.webp" alt="Image 1" class="img-grid-photo"></div>
+            <div class="grid-item"><img src="./hau-duy/anh/2.webp" alt="Image 2" class="img-grid-photo"></div>
+        </div>
+        <div class="grid-img2">
+            <div class="grid-item"><img src="./hau-duy/anh/3.webp" alt="Image 3" class="img-grid-photo"></div>
+            <div class="grid-item"><img src="./hau-duy/anh/4.webp" alt="Image 4" class="img-grid-photo"></div>
+        </div>
+        <div class="grid-img1">
+            <div class="grid-item"><img src="./hau-duy/anh/5.webp" alt="Image 5" class="img-grid-photo"></div>
+            <div class="grid-item"><img src="./hau-duy/anh/6.webp" alt="Image 6" class="img-grid-photo"></div>
+        </div>
+        <div class="grid-img2">
+            <div class="grid-item"><img src="./hau-duy/anh/7.webp" alt="Image 7" class="img-grid-photo"></div>
+            <div class="grid-item"><img src="./hau-duy/anh/8.webp" alt="Image 8" class="img-grid-photo"></div>
+        </div>
+        <div class="grid-img1">
+            <div class="grid-item"><img src="./hau-duy/anh/9.webp" alt="Image 9" class="img-grid-photo"></div>
+            <div class="grid-item"><img src="./hau-duy/anh/10.webp" alt="Image 10" class="img-grid-photo"></div>
+        </div>
+        <div class="grid-img2">
+            <div class="grid-item"><img src="./hau-duy/anh/11.webp" alt="Image 11" class="img-grid-photo"></div>
+            <div class="grid-item"><img src="./hau-duy/anh/12.webp" alt="Image 12" class="img-grid-photo"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Get modal elements
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.getElementsByClassName('close')[0];
+
+        // Get all images
+        const images = document.getElementsByClassName('img-grid-photo');
+
+        // Add click event to each image
+        Array.from(images).forEach(img => {
+            img.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+            });
+        });
+
+        // Close modal when clicking the close button
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside the image
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.style.display === 'flex') {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+            <img src="./hau-duy/anh/background1-07.png" alt="" class="img-photo">
+            </div>
+        </div>
+    </div>
+    
+
+   <script>
+const musicCircle = document.getElementById("musicCircle");
+const audio = document.getElementById("audio");
+const videoIframe = document.getElementById("video");
+
+// Thêm sự kiện khi nhấn vào vòng tròn
+musicCircle.addEventListener("click", toggleMusic);
+
+// Hàm điều khiển việc phát hoặc tạm dừng nhạc
+function toggleMusic() {
+    if (audio.paused) {
+        audio.play(); // Phát nhạc
+        musicCircle.classList.add("spin"); // Bắt đầu xoay
+    } else {
+        audio.pause(); // Dừng nhạc
+        musicCircle.classList.remove("spin"); // Dừng xoay
+    }
+}
+
+// Tạo đối tượng YouTube Player API
+let player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video', {
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+// Lắng nghe sự kiện trạng thái của video
+function onPlayerStateChange(event) {
+    // Khi video bắt đầu phát (state = 1), dừng nhạc và dừng xoay vòng tròn
+    if (event.data === YT.PlayerState.PLAYING) {
+        if (!audio.paused) {
+            audio.pause(); // Dừng nhạc
+            musicCircle.classList.remove("spin"); // Dừng xoay vòng tròn
+        }
+    }
+}
+
+// Tải API YouTube
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+</script>
+<script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.menu-list').classList.toggle('active');
+        });
+    </script>
+   <script>
+        // Lấy tên file hiện tại từ URL (ví dụ: home.html, info.html)
+        const currentPath = window.location.pathname.split('/').pop() || 'home.html';
+        const menuItems = document.querySelectorAll('.menu');
+
+        // Xóa lớp active khỏi tất cả mục menu
+        menuItems.forEach(item => item.parentElement.classList.remove('active'));
+
+        // Thêm lớp active cho mục menu tương ứng
+        menuItems.forEach(item => {
+            const href = item.getAttribute('href');
+            if (href === currentPath || href === './' + currentPath) {
+                item.parentElement.classList.add('active');
+            }
+        });
+    </script>
+     <button id="backToTop" title="Quay lại đầu trang">↑</button>
+    <script>
+  document.getElementById("backToTop").onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const musicCircle = document.getElementById("musicCircle");
+    const audio = document.getElementById("audio");
+
+    // Load saved audio state from sessionStorage
+    const isPlaying = sessionStorage.getItem("musicPlaying") === "true";
+    const savedTime = parseFloat(sessionStorage.getItem("musicCurrentTime")) || 0;
+
+    // Initialize audio state
+    if (savedTime) {
+        audio.currentTime = savedTime; // Restore playback position
+    }
+
+    if (isPlaying) {
+        audio.play().then(() => {
+            musicCircle.classList.add("spin"); // Resume spinning animation
+        }).catch(error => {
+            console.error("Audio playback failed:", error);
+            // Display the "Click Me" label if playback fails
+            document.querySelector(".lb-circle").style.display = "block";
+        });
+    } else {
+        musicCircle.classList.remove("spin"); // Ensure no spinning if paused
+    }
+
+    // Toggle music playback on click
+    musicCircle.addEventListener("click", toggleMusic);
+
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play().then(() => {
+                musicCircle.classList.add("spin");
+                sessionStorage.setItem("musicPlaying", "true");
+            }).catch(error => {
+                console.error("Audio playback failed:", error);
+            });
+        } else {
+            audio.pause();
+            musicCircle.classList.remove("spin");
+            sessionStorage.setItem("musicPlaying", "false");
+        }
+        // Save current playback time
+        sessionStorage.setItem("musicCurrentTime", audio.currentTime);
+    }
+
+    // Save playback time periodically
+    audio.addEventListener("timeupdate", () => {
+        sessionStorage.setItem("musicCurrentTime", audio.currentTime);
+    });
+
+    // Update playback state on pause/play
+    audio.addEventListener("play", () => {
+        sessionStorage.setItem("musicPlaying", "true");
+    });
+
+    audio.addEventListener("pause", () => {
+        sessionStorage.setItem("musicPlaying", "false");
+    });
+
+    // Handle YouTube video conflicts (if present)
+    if (window.YT && window.YT.Player) {
+        let player;
+        function onYouTubeIframeAPIReady() {
+            player = new window.YT.Player("video", {
+                events: {
+                    onStateChange: onPlayerStateChange,
+                },
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data === window.YT.PlayerState.PLAYING) {
+                if (!audio.paused) {
+                    audio.pause();
+                    musicCircle.classList.remove("spin");
+                    sessionStorage.setItem("musicPlaying", "false");
+                    sessionStorage.setItem("musicCurrentTime", audio.currentTime);
+                }
+            }
+        }
+
+        // Load YouTube API if not already loaded
+        if (!window.YT) {
+            const tag = document.createElement("script");
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName("script")[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        } else if (document.getElementById("video")) {
+            onYouTubeIframeAPIReady();
+        }
+    }
+});
+</script>
+<script src="./hau-duy/script.js"></script>
+</body>
+</html>

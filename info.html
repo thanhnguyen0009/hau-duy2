@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thông tin Open Graph cho ảnh đại diện -->
+    <!-- <meta property="og:image" content="https://yenstudio.com.vn/phuoc-hien.jpg" /> -->
+    <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
+    <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
+
+    <!-- Các thông tin khác cho Open Graph -->
+    <meta property="og:title" content="HẬU - DUY" />
+    <meta property="og:description" content="TRUNG HẬU - GIA DUY" />
+    <!-- <meta property="og:url" content="https://yenstudio.com.vn/phuoc-hien/thiepmoi.html" /> -->
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./hau-duy/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>TRUNG HẬU - GIA DUY</title>
+</head>
+<body>
+    <div id="loading-container" class="loading-container">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <div class="container-wrapper">
+              <div class="box-circle">
+                <div class="circle" id="musicCircle">
+                    <img src="./hau-duy/anh/play-07.png" alt="Music Icon" class="circle-image">
+                    <audio id="audio" src="./hau-duy/audio/Romantic Positive Wedding.wav" loop></audio>
+                </div>
+                <!-- <label for="audio" class="lb-circle">No Music? <br> Click Me</label> -->
+            </div>
+
+            <div class="navbar-menu">
+                <img src="./hau-duy/anh/logo-07.png" alt="" class="img-logo">
+                
+                <div class="box-name-navbar">
+                    <img src="./hau-duy/anh/hau-duy2-07.png" alt="" class="img-logo2">
+                </div>
+            </div>
+            <ul>
+                    <li><a href="#home" class="menu">Thư mời gửi cả nhà</a></li>
+                    <li><a href="#info" class="menu">Ngày chúng mình kể chuyện</a></li>
+                    <li><a href="#story" class="menu">Chuyện chúng mình</a></li>
+                    <li><a href="#photo" class="menu">Vì chúng ta gìn giữ</a></li>
+                    <li><a href="#rsvp" class="menu">Xác nhận khách mời</a></li>
+                    <li><a href="#gift" class="menu">Quà từ người thương</a></li>
+                </ul>
+            <div class="content">
+                <img src="./hau-duy/anh/pic2-07.png" alt="" class="img-info1">
+                <p class="p-info">Ngày hôm ấy ngoài việc bạn là mảnh ghép quan trọng trong câu chuyện này, thì Hậu và Duy 
+                     cũng rất mong trong không gian và khoảng thời gian ấy, mỗi người chúng ta sẽ tạm quên 
+                      đi những áp lực ngoài kia để tái tạo lại nguồn năng lượng tích cực nhất, thương chờ 
+                       sự tham dự của mọi người cùng</p>
+                <label for="" class="lb-logo-name">TRUNG HẬU - GIA DUY</label>
+                <img src="./hau-duy/anh/tree1-07.png" alt="" class="img-info2">
+                <label for="" class="lb-info2">Vào NGÀY <strong>20.12.2025</strong></label>
+                <label for="" class="lb-info3">Lat Valley Retreat Village</label>
+                <label for="" class="lb-info4">Thôn Suối Cạn, Xã Lát, Huyện Lạc Dương, Tỉnh lâm Đồng, Việt Nam</label>
+                <img src="./hau-duy/anh/map-07.png" alt="" class="img-info3">
+                <a href="https://maps.app.goo.gl/CLQysEQuRr3LgtBo9" class="btn-map" target="_blank">XEM BẢN ĐỒ | MAPS</a>
+                <div class="timeline">
+                    <img src="./hau-duy/anh/timeline-07.png" alt="" class="img-timeline">
+                    <img src="./hau-duy/anh/timeline2-07.png" alt="" class="img-timeline2">
+                </div>
+                <div class="dress">
+                    <label for="" class="lb-info5">Dresscode</label>
+                    <p class="p-info2">Tụi mình yêu cái đẹp, và tụi mình biết cả nhà cũng thế. Đừng ngần ngại hãy diện những <br>
+                        trang phục thật lộng lẫy để cả nhà thật xinh đẹp và rạng rỡ nhé!</p>
+                </div>
+                <div class="box-dress">
+                    <div class="dress-item">
+                        <img src="./hau-duy/anh/earth-07.png" alt="" class="img-icon">
+                        <label for="" class="lb-dress">EARTH</label>
+                    </div>
+
+                     <div class="dress-item">
+                        <img src="./hau-duy/anh/sand-07.png" alt="" class="img-icon">
+                        <label for="" class="lb-dress">SAND</label>
+                    </div>
+
+                     <div class="dress-item">
+                        <img src="./hau-duy/anh/latte-07.png" alt="" class="img-icon">
+                        <label for="" class="lb-dress">LATTE</label>
+                    </div>
+
+                     <div class="dress-item">
+                        <img src="./hau-duy/anh/linen-07.png" alt="" class="img-icon">
+                        <label for="" class="lb-dress">LINEN</label>
+                    </div>
+                </div>
+
+                <img src="./hau-duy/anh/background1-07.png" alt="" class="img-info5">
+            </div>
+        </div>
+    </div>
+    
+
+
+<script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.menu-list').classList.toggle('active');
+        });
+    </script>
+   <script>
+        // Lấy tên file hiện tại từ URL (ví dụ: home.html, info.html)
+        const currentPath = window.location.pathname.split('/').pop() || 'home.html';
+        const menuItems = document.querySelectorAll('.menu');
+
+        // Xóa lớp active khỏi tất cả mục menu
+        menuItems.forEach(item => item.parentElement.classList.remove('active'));
+
+        // Thêm lớp active cho mục menu tương ứng
+        menuItems.forEach(item => {
+            const href = item.getAttribute('href');
+            if (href === currentPath || href === './' + currentPath) {
+                item.parentElement.classList.add('active');
+            }
+        });
+    </script>
+
+    <script>
+        window.onload = function() {
+    // Lấy tất cả các phần tử cho các hiệu ứng fade-down, fade-up, fade-right, fade-left, zoom-in
+    const fadeDownElements = document.querySelectorAll('.kinhmoi, .lb-inv');  // Các phần tử fade-down
+    const fadeUpElements = document.querySelectorAll('.lb-time, .lb-add, .in-fe, .container-check, .inp-ten, .lb-text, #loi-chuc');    // Các phần tử fade-up
+    const fadeRightElements = document.querySelectorAll('.box-nu, .img1');                               // Các phần tử fade-right
+    const fadeLeftElements = document.querySelectorAll('.box-nam, .img2');                                // Các phần tử fade-left
+    const zoomInElements = document.querySelectorAll('.timeline-top, .lb-dress1, .lb-dress2, .xacnhan');                // Các phần tử zoom-in
+
+    // Cấu hình của IntersectionObserver
+    const options = {
+        root: null, // Theo mặc định là viewport
+        threshold: 0.5 // Kích hoạt khi 50% phần tử hiển thị trong viewport
+    };
+
+    // Tạo đối tượng IntersectionObserver để theo dõi sự xuất hiện và mất đi của phần tử
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Nếu phần tử xuất hiện trong viewport, thêm lớp "visible"
+                entry.target.classList.add('visible');
+            } else {
+                // Nếu phần tử không còn trong viewport, xóa lớp "visible"
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, options);
+
+    // Quan sát các phần tử theo từng hiệu ứng
+    fadeDownElements.forEach(element => observer.observe(element));
+    fadeUpElements.forEach(element => observer.observe(element));
+    fadeRightElements.forEach(element => observer.observe(element));
+    fadeLeftElements.forEach(element => observer.observe(element));
+    zoomInElements.forEach(element => observer.observe(element));
+};
+
+    </script>
+<script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbwbJuZ2GsQlICxgaDtNH6xzItaXT5g0h_QarTj-aYiYn63CUoaLj4i9DH6MaHiSXl0/exec';
+        const form = document.forms['phuoc-hien'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault(); // Ngừng việc gửi form mặc định
+
+            document.getElementById('loading-container').style.display = 'flex';
+
+            // Gửi dữ liệu form đi
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu dữ liệu gửi thành công, làm mới lại form
+                        form.reset(); // Làm mới lại form
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                        icon: 'success',
+                            title: 'Thành công',
+                            text: 'Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến dâu rể rồi nhaa <3',
+                            imageWidth: 300,
+                            imageHeight: 200,
+                            confirmButtonText: 'ĐÓNG',
+                            background: '#f8f8f8',
+                            padding: '20px',
+                            customClass: {
+                                popup: 'custom-popup',
+                                title: 'custom-title',
+                                confirmButton: 'custom-confirm-button'
+                            },
+                            didOpen: () => {
+                                document.querySelector('.swal2-popup').style.borderRadius = '10px'; // Bo tròn các góc
+                            }
+                        });
+                    } else {
+                        // Nếu gặp lỗi khi gửi dữ liệu
+                        console.error('Error!', response);
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            title: 'Oops!',
+                            text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                })
+                .catch(error => {
+                    // Xử lý lỗi nếu có
+                    console.error('Error!', error.message);
+
+                    document.getElementById('loading-container').style.display = 'none';
+
+                    Swal.fire({
+                        title: 'Oops!',
+                        text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                });
+        });
+</script>
+<script>
+    "use strict";
+     // Select all slides
+     const slides = document.querySelectorAll(".slide");
+
+     // Loop through slides và thiết lập translateX cho mỗi slide
+     slides.forEach((slide, indx) => {
+     slide.style.transform = `translateX(${indx * 100}%)`;
+     });
+
+     // Chọn nút next và prev
+     const nextSlide = document.querySelector(".btn-next");
+     const prevSlide = document.querySelector(".btn-prev");
+
+     // Biến đếm số slide hiện tại và tối đa
+     let curSlide = 0;
+     let maxSlide = slides.length - 1;
+
+     // Thêm sự kiện cho nút tiếp theo
+     nextSlide.addEventListener("click", function () {
+     // Nếu hiện tại là slide cuối, quay lại đầu tiên
+     if (curSlide === maxSlide) {
+         curSlide = 0;
+     } else {
+         curSlide++;
+     }
+
+     // Di chuyển tất cả các slide
+     slides.forEach((slide, indx) => {
+         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+     });
+     });
+
+     // Thêm sự kiện cho nút quay lại
+     prevSlide.addEventListener("click", function () {
+     // Nếu hiện tại là slide đầu tiên, quay lại cuối cùng
+     if (curSlide === 0) {
+         curSlide = maxSlide;
+     } else {
+         curSlide--;
+     }
+
+     // Di chuyển tất cả các slide
+     slides.forEach((slide, indx) => {
+         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+     });
+     });
+
+  </script>
+   <script>
+const musicCircle = document.getElementById("musicCircle");
+const audio = document.getElementById("audio");
+const videoIframe = document.getElementById("video");
+
+// Thêm sự kiện khi nhấn vào vòng tròn
+musicCircle.addEventListener("click", toggleMusic);
+
+// Hàm điều khiển việc phát hoặc tạm dừng nhạc
+function toggleMusic() {
+    if (audio.paused) {
+        audio.play(); // Phát nhạc
+        musicCircle.classList.add("spin"); // Bắt đầu xoay
+    } else {
+        audio.pause(); // Dừng nhạc
+        musicCircle.classList.remove("spin"); // Dừng xoay
+    }
+}
+
+// Tạo đối tượng YouTube Player API
+let player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video', {
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+// Lắng nghe sự kiện trạng thái của video
+function onPlayerStateChange(event) {
+    // Khi video bắt đầu phát (state = 1), dừng nhạc và dừng xoay vòng tròn
+    if (event.data === YT.PlayerState.PLAYING) {
+        if (!audio.paused) {
+            audio.pause(); // Dừng nhạc
+            musicCircle.classList.remove("spin"); // Dừng xoay vòng tròn
+        }
+    }
+}
+
+// Tải API YouTube
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+</script>
+ <button id="backToTop" title="Quay lại đầu trang">↑</button>
+    <script>
+  document.getElementById("backToTop").onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const musicCircle = document.getElementById("musicCircle");
+    const audio = document.getElementById("audio");
+
+    // Load saved audio state from sessionStorage
+    const isPlaying = sessionStorage.getItem("musicPlaying") === "true";
+    const savedTime = parseFloat(sessionStorage.getItem("musicCurrentTime")) || 0;
+
+    // Initialize audio state
+    if (savedTime) {
+        audio.currentTime = savedTime; // Restore playback position
+    }
+
+    if (isPlaying) {
+        audio.play().then(() => {
+            musicCircle.classList.add("spin"); // Resume spinning animation
+        }).catch(error => {
+            console.error("Audio playback failed:", error);
+            // Display the "Click Me" label if playback fails
+            document.querySelector(".lb-circle").style.display = "block";
+        });
+    } else {
+        musicCircle.classList.remove("spin"); // Ensure no spinning if paused
+    }
+
+    // Toggle music playback on click
+    musicCircle.addEventListener("click", toggleMusic);
+
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play().then(() => {
+                musicCircle.classList.add("spin");
+                sessionStorage.setItem("musicPlaying", "true");
+            }).catch(error => {
+                console.error("Audio playback failed:", error);
+            });
+        } else {
+            audio.pause();
+            musicCircle.classList.remove("spin");
+            sessionStorage.setItem("musicPlaying", "false");
+        }
+        // Save current playback time
+        sessionStorage.setItem("musicCurrentTime", audio.currentTime);
+    }
+
+    // Save playback time periodically
+    audio.addEventListener("timeupdate", () => {
+        sessionStorage.setItem("musicCurrentTime", audio.currentTime);
+    });
+
+    // Update playback state on pause/play
+    audio.addEventListener("play", () => {
+        sessionStorage.setItem("musicPlaying", "true");
+    });
+
+    audio.addEventListener("pause", () => {
+        sessionStorage.setItem("musicPlaying", "false");
+    });
+
+    // Handle YouTube video conflicts (if present)
+    if (window.YT && window.YT.Player) {
+        let player;
+        function onYouTubeIframeAPIReady() {
+            player = new window.YT.Player("video", {
+                events: {
+                    onStateChange: onPlayerStateChange,
+                },
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data === window.YT.PlayerState.PLAYING) {
+                if (!audio.paused) {
+                    audio.pause();
+                    musicCircle.classList.remove("spin");
+                    sessionStorage.setItem("musicPlaying", "false");
+                    sessionStorage.setItem("musicCurrentTime", audio.currentTime);
+                }
+            }
+        }
+
+        // Load YouTube API if not already loaded
+        if (!window.YT) {
+            const tag = document.createElement("script");
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName("script")[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        } else if (document.getElementById("video")) {
+            onYouTubeIframeAPIReady();
+        }
+    }
+});
+</script>
+<script src="./hau-duy/script.js"></script>
+</body>
+</html>

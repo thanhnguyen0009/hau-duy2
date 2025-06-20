@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thông tin Open Graph cho ảnh đại diện -->
+    <!-- <meta property="og:image" content="https://yenstudio.com.vn/phuoc-hien.jpg" /> -->
+    <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
+    <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
+
+    <!-- Các thông tin khác cho Open Graph -->
+    <meta property="og:title" content="HẬU - DUY" />
+    <meta property="og:description" content="TRUNG HẬU - GIA DUY" />
+    <!-- <meta property="og:url" content="https://yenstudio.com.vn/phuoc-hien/thiepmoi.html" /> -->
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./hau-duy/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>TRUNG HẬU - GIA DUY</title>
+</head>
+<body>
+    <div id="loading-container" class="loading-container">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <div class="container-wrapper">
+             <div class="box-circle">
+                <div class="circle" id="musicCircle">
+                    <img src="./hau-duy/anh/play-07.png" alt="Music Icon" class="circle-image">
+                    <audio id="audio" src="./hau-duy/audio/Romantic Positive Wedding.wav" loop></audio>
+                </div>
+                <!-- <label for="audio" class="lb-circle">No Music? <br> Click Me</label> -->
+            </div>
+
+            <div class="navbar-menu">
+                <img src="./hau-duy/anh/logo-07.png" alt="" class="img-logo">
+                
+                <div class="box-name-navbar">
+                    <label for="" class="lb-name-navbar">TRUNG HẬU - GIA DUY</label>
+                    <label for="" class="lb-time-navbar">20.12.2025</label>
+                </div>
+            </div>
+            <ul>
+                    <li><a href="./home.html" class="menu">Thư mời gửi cả nhà</a></li>
+                    <li><a href="./info.html" class="menu">Ngày chúng mình kể chuyện</a></li>
+                    <li><a href="./story.html" class="menu">Chuyện chúng mình</a></li>
+                    <li><a href="./photo.html" class="menu">Vì chúng ta gìn giữ</a></li>
+                    <li><a href="./rsvp.html" class="menu">Xác nhận khách mời</a></li>
+                    <li><a href="./gift.html" class="menu">Quà từ người thương</a></li>
+                </ul>
+
+            <div class="content">
+
+            <img src="./hau-duy/anh/tree1-07.png" alt="" class="img-rsvp1">
+            <form action="" name="hau-duy">
+                <div class="feed-info">
+                    <lable class="lb-form1">Xác nhận khách mời</lable>
+                    <label for="" class="lb-dot"><i class="fa-solid fa-diamond"></i></label>
+                    <label for="" class="in-fe"> "Người thương" ơi! <br>
+                    Hãy giúp Hậu và Duy xác nhận sớm để tụi mình chuẩn bị thật chu đáo nhé.</label>
+                </div>
+
+                <div class="xacnhan-ten">
+                    <label for="" class="lb-xacnhan1">Cho Hậu với Duy biết một chút <br>
+                                thông tin về cả nhà nhé!</label>
+                    <div class="box-ten">
+                    <input required class="inp-ten" type="text"  name="TÊN KHÁCH MỜI" placeholder="Họ và tên khách mời" title="Vui lòng nhập tên của bạn">
+                    <input required class="inp-ten" type="text"  name="CẢ NHÀ SẼ ĐI CÙNG" placeholder="Cả nhà sẽ đi cùng..." title="Vui lòng nhập tên của bạn">
+                    <input required class="inp-ten" type="text" name="SỐ ĐIỆN THOẠI" placeholder="Số điện thoại khách mời (Để chúng mình có thể liên hệ nếu cần)" maxlength="10" pattern="\d{10}" title="Vui lòng nhập đúng 10 chữ số (không bao gồm chữ hoặc ký tự đặc biệt)"/>
+
+
+                </div>
+                </div>
+                
+                <div class="xacnhan-thamgia">
+                    <label for="" class="lb-xacnhan2">XÁC NHẬN THAM GIA</label>
+                    <p class="p-xacnhan1">Hậu và Duy đang đếm ngược từng ngày để được cùng nhau kể câu chuyện này đến những “người thương”,
+                         sẽ rất trân quý và hạnh phúc khi có CẢ NHÀ ở đó. MỌI NGƯỜI có thể đến cùng tụi mình không?</p>
+                     <div class="container-check-thamgia">
+                        <input required class="box-feed-thamgia" type="radio" value="THAM DỰ" id="yesthamgia" name="XÁC NHẬN THAM GIA">
+                        <label class="check-box-thamgia" for="yesthamgia">
+                            <h3 class="til-check-thamgia">MÌNH SẼ ĐẾN, CÙNG NGHE VÀ CHIA SẼ</h3>
+                        </label>
+                        <input required class="box-feed-thamgia" type="radio" value="KHÔNG THAM DỰ" id="nothamgia" name="XÁC NHẬN THAM GIA">
+                        <label class="check-box-thamgia" for="nothamgia"> 
+                            <h3 class="til-check-thamgia">TIẾC QUÁ! MÌNH KHÔNG THỂ THAM DỰ</h3>
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="xacnhan-dichuyen">
+                    <label for="" class="lb-xacnhan3">XÁC NHẬN DI CHUYỂN</label>
+                    <p class="p-xacnhan2">CẢ NHÀ biết không, Hậu và Duy đang cùng nhau trên chuyến xe đi đến hạnh phúc,
+                         và trên chặng hành trình đó tụi mình rất vui nếu có MỌI NGƯỜI là người đồng hành.
+                          Tụi mình sắp xếp lịch trình chuyến xe đó như sau:</p>
+                    <div class="schedule-container">
+                        <div class="schedule-content">
+                            <div class="schedule-item">
+                                <div class="bullet"></div>
+                                <div class="text">Tối 19.12.2025: KHỞI HÀNH TỪ TP.HCM LÊN LAT VALLEY</div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="bullet"></div>
+                                <div class="text">TRƯA 21.12.2025: XUẤT PHÁT TỪ LAT VALLEY VỀ LẠI TP.HCM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="" class="lb-dot-dichuyen"><i class="fa-solid fa-diamond"></i></label>
+                    <p class="p-xacnhan3">Nếu CẢ NHÀ có kế hoạch tiếp tục ở lại Đà Lạt sau ngày kể chuyện, tụi mình cũng sẽ chuẩn bị
+                         xe trung chuyển từ Lat Valley về lại trung tâm Đà Lạt trưa 21.12.2025 để CẢ NHÀ tiếp tục hành trình riêng. <br>
+                            MỌI NGƯỜI dự định như thế nào, cho tụi mình biết nhé: <br>
+                    </p>
+                    <div class="box-dichuyen">
+                        <div class="grid-xacnhan1">
+                            <img src="./hau-duy/anh/tree2-07.png" alt="" class="img-rsvp4">
+                        </div>
+                        <div class="grid-xacnhan2">
+                            <div class="container-check-dichuyen">
+                                <input required class="box-feed-dichuyen" type="radio" value="ĐI CÙNG XE VỚI NGƯỜI THÂN" id="dicung" name="XÁC NHẬN DI CHUYỂN">
+                                <label class="check-box-dichuyen" for="dicung">
+                                    <h3 class="til-check-dichuyen">Mình sẽ cùng đi xe với những người thương yêu <br>
+                                    từ TP.HCM lên Lat Valley (Tối 19.12.2025)</h3>
+                                </label>
+                                <input required class="box-feed-dichuyen" type="radio" value="VỀ LẠI HCM VỚI CHUYẾN XE ĐƯỢC SẮP XẾP" id="velai" name="XÁC NHẬN DI CHUYỂN">
+                                <label class="check-box-dichuyen" for="velai"> 
+                                    <h3 class="til-check-dichuyen">Mình sẽ về lại TP.HCM với chuyến xe đã được sắp xếp <br>
+                                                        (Trưa 21.12.2025)</h3>
+                                </label>
+                                <input required class="box-feed-dichuyen" type="radio" value="Ở LẠI ĐÀ LẠT VÀ CẦN XE TRUNG CHUYỂN" id="olai" name="XÁC NHẬN DI CHUYỂN">
+                                <label class="check-box-dichuyen" for="olai"> 
+                                    <h3 class="til-check-dichuyen"> Mình sẽ ở lại Đà Lạt và cần xe trung chuyển <br>
+                                                        vào trung tâm.</h3>
+                                </label>
+                                <input required class="box-feed-dichuyen" type="radio" value="TỰ TÚC DI CHUYỂN" id="tutuc" name="XÁC NHẬN DI CHUYỂN">
+                                <label class="check-box-dichuyen" for="tutuc"> 
+                                    <h3 class="til-check-dichuyen"> Mình sẽ tự túc việc di chuyển để chủ động thời gian.</h3>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xacnhan-antrua">
+                    <label for="" class="lb-xacnhan4">XÁC NHẬN ĂN TRƯA</label>
+                    <p class="p-xacnhan4">
+                        Cho "Ngày Kể Chuyện" được trọn vẹn và thoải mái, Tụi mình đã chuẩn bị chuyến xe dành riêng cho mọi người cùng những căn phòng ấm áp giữa thung lũng. Để mọi người có thể tận hưởng từng khoảnh khắc thảnh thơi và an yên. <br> <br>
+
+                        Khi đến nơi MỌI NGƯỜI sẽ có khoảng thời gian riêng để nghỉ ngơi và trải nghiệm mọi hoạt động tại đây (Massage, tham quan trải nghiệm vườn rau organic, vườn dâu, khu trang trại chăn nuôi, Bắn cung, đá bóng, Tham gia trekking cung đường từ 5km - 12km,...) <br> <br>
+
+
+                        Nếu MỌI NGƯỜI muốn dùng một bữa trưa nhẹ nhàng thì nhà hàng sẽ chuẩn bị nhiều món phù hợp với từng khẩu vị của mọi người. Hoặc MỌI NGƯỜI cũng có thể đặt cho nhóm 10 người theo set menu có sẵn. <br> <br>
+
+                        Tụi mình có <strong>đính kèm Menu bên dưới - MỌI NGƯỜI chỉ cần chọn món trước để nhà hàng sẽ tiện chuẩn bị thật chu đáo nhé.</strong>
+
+                    </p>
+
+                    <a href="#" class="btn-xacnhan">XEM MENU</a>
+
+
+                   <div class="box-luuy">
+                        <div class="note">
+                            <l-makeupabel for="" class="lb-xacnhan5">Lưu ý một số thông tin giúp tụi mình nhé:</label>
+                            <ul class="box-luuy-list">
+                                <li class="luuy">Cần đặt trước ít nhất 20 ngày</li>
+                                <li class="luuy">Đối với khách đặt món lẻ sẽ chọn trong menu Alacarte </li>
+                                <li class="luuy">Đối với khách đặt theo set menu, nên đại diện 1 người chọn và đặt set cho bàn 10 người (Để tránh đặt trùng số lượng)</li>
+                                <li class="luuy">Chi phí phần ăn trưa sẽ do khách mời thanh toán trực tiếp với nhà hàng sau khi dùng bữa</li>
+                                <li class="luuy">KHÁCH MỜI CÓ THỂ THAY ĐỔI SUẤT ĂN TRƯA TRƯỚC NGÀY 01.12.2025</li>
+                            </ul>
+                        </div>
+                        <div class="note-img">
+                            <img src="./hau-duy/anh/tree1-07.png" alt="" class="img-note">
+                        </div>
+                   </div>
+                   <p class="p-xacnhan4">Và trong làn sương sớm của núi rừng, tụi mình mời MỌI NGƯỜI đón bình minh bằng một bữa buffet sáng- 
+                    để bắt đầu ngày mới thật dịu dàng, sau đêm kể chuyện đầy cảm xúc cùng nhau.</p>
+                </div>
+
+                <div class="xacnhan-makeup">
+                    <label for="" class="lb-xacnhan6">XÁC NHẬN MAKEUP</label>
+                    <p class="p-xacnhan5">Để mỗi người đều có thể xuất hiện trong sự xinh đẹp nhất của mình thì CẢ NHÀ sẽ dự dịnh:</p>
+                    <div class="container-check-makeup">
+                        <input class="box-feed-makeup" type="radio" value="TỰ CHUẨN BỊ MAKEUP" id="yesmakeup" name="XÁC NHẬN MAKEUP">
+                        <label class="check-box-makeup" for="yesmakeup">
+                            <h3 class="til-check-makeup"> Mình sẽ tự chuẩn bị phần makeup</h3>
+                        </label>
+                        <input class="box-feed-makeup" type="radio" value="CẦN HỖ TRỢ BOOK MAKEUP" id="nomakeup" name="XÁC NHẬN MAKEUP">
+                        <label class="check-box-makeup" for="nomakeup"> 
+                            <h3 class="til-check-makeup">Mình cần hỗ trợ book chuyên viên makeup</h3>
+                        </label>
+                    </div>
+                    <label for="" class="lb-makeup">Một số lưu ý:</label>
+                    <ul class="makeup-list">
+                        <li class="list-makeup">
+                            <span class="makeup-text">
+                            Vì đoạn đường di chuyển từ trung tâm vào khá xa nên nếu cả nhà tự liên hệ team makeup riêng hãy chuẩn bị sớm nhé.
+                            </span>
+                            <i class="fa-solid fa-circle makeup-icon"></i>
+                        </li>
+                        <li class="list-makeup">
+                            <span class="makeup-text">
+                            Tụi mình sẽ nắm thông tin và gửi bảng giá makeup sau khi tổng hợp hết mong muốn của mọi người.
+                            </span>
+                            <i class="fa-solid fa-circle makeup-icon"></i>
+                        </li>
+                        <li class="list-makeup">
+                            <span class="makeup-text">
+                            Chi Phí Makeup sẽ được thanh toán trực tiếp với team make up khi cả nhà chốt.
+                            </span>
+                            <i class="fa-solid fa-circle makeup-icon"></i>
+                        </li>
+                        </ul>
+
+                    <p class="p-xacnhan6">Dù CẢ NHÀ chọn cách nào thì điều quý nhất tụi mình mong, là được thấy MỌI NGƯỜI thật tự tin, rạng rỡ và thoải mái nhất trong ngày hôm đó.</p>
+                    <img src="./hau-duy/anh/tree2-07.png" alt="" class="img-rsvp2">
+                </div>
+
+
+                <div class="loichuc">
+                    <label for="" class="lb-xacnhan7">MỘT CHÚT NHẮN GỬI TỪ <br>
+                                “NGƯỜI THƯƠNG”</label>
+                    <p class="p-xacnhan7">Hậu và Duy luôn lắng nghe những mong muốn từ cả nhà. Nếu có thắc mắc, hay cần hỗ trợ bất cứ điều gì, đừng ngại cả nhà cứ ghi rõ để tụi mình sắp xếp chu đáo nhé:</p>
+                    <div class="box-loichuc">
+                        <textarea id="loi-chuc" name="LỜI CHÚC" rows="4" cols="50" placeholder="VIẾT LỜI NHẮN GỬI..."></textarea>
+                    </div>
+                </div>
+                <p class="p-xacnhan8">Hậu và Duy mong buổi tiệc là một khoảng yên bình và nhẹ nhàng của những “tâm hồn đã lớn”, nên rất mong cả nhà sắp xếp cho các bé nhỏ ở nhà với ông bà để mình cùng được thư thả và trọn vẹn hơn nhé!</p>
+                <div class="wrapper">
+                    <button class="xacnhan" type="submit">GỬI XÁC NHẬN</button>
+                </div>
+
+                <img src="./hau-duy/anh/background2-07.png" alt="" class="img-rsvp3">
+            </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script>
+        window.onload = function() {
+    // Lấy tất cả các phần tử cho các hiệu ứng fade-down, fade-up, fade-right, fade-left, zoom-in
+    const fadeDownElements = document.querySelectorAll('');  // Các phần tử fade-down
+    const fadeUpElements = document.querySelectorAll('');    // Các phần tử fade-up
+    const fadeRightElements = document.querySelectorAll('');                               // Các phần tử fade-right
+    const fadeLeftElements = document.querySelectorAll('');                                // Các phần tử fade-left
+    const zoomInElements = document.querySelectorAll('');                // Các phần tử zoom-in
+
+    // Cấu hình của IntersectionObserver
+    const options = {
+        root: null, // Theo mặc định là viewport
+        threshold: 0.5 // Kích hoạt khi 50% phần tử hiển thị trong viewport
+    };
+
+    // Tạo đối tượng IntersectionObserver để theo dõi sự xuất hiện và mất đi của phần tử
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Nếu phần tử xuất hiện trong viewport, thêm lớp "visible"
+                entry.target.classList.add('visible');
+            } else {
+                // Nếu phần tử không còn trong viewport, xóa lớp "visible"
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, options);
+
+    // Quan sát các phần tử theo từng hiệu ứng
+    fadeDownElements.forEach(element => observer.observe(element));
+    fadeUpElements.forEach(element => observer.observe(element));
+    fadeRightElements.forEach(element => observer.observe(element));
+    fadeLeftElements.forEach(element => observer.observe(element));
+    zoomInElements.forEach(element => observer.observe(element));
+};
+
+    </script>
+<script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycby57kCGAPMyjcKfp3x6vu6X7EAmCkPSTOQs6L-2ENOXZvWrc7Q6RbunCDaMSEijw7c4/exec';
+        const form = document.forms['hau-duy'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault(); // Ngừng việc gửi form mặc định
+
+            document.getElementById('loading-container').style.display = 'flex';
+
+            // Gửi dữ liệu form đi
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu dữ liệu gửi thành công, làm mới lại form
+                        form.reset(); // Làm mới lại form
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                        icon: 'success',
+                            title: 'Thành công',
+                            text: 'Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến dâu rể rồi nhaa <3',
+                            imageWidth: 300,
+                            imageHeight: 200,
+                            confirmButtonText: 'ĐÓNG',
+                            background: '#f8f8f8',
+                            padding: '20px',
+                            customClass: {
+                                popup: 'custom-popup',
+                                title: 'custom-title',
+                                confirmButton: 'custom-confirm-button'
+                            },
+                            didOpen: () => {
+                                document.querySelector('.swal2-popup').style.borderRadius = '10px'; // Bo tròn các góc
+                            }
+                        });
+                    } else {
+                        // Nếu gặp lỗi khi gửi dữ liệu
+                        console.error('Error!', response);
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            title: 'Oops!',
+                            text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                })
+                .catch(error => {
+                    // Xử lý lỗi nếu có
+                    console.error('Error!', error.message);
+
+                    document.getElementById('loading-container').style.display = 'none';
+
+                    Swal.fire({
+                        title: 'Oops!',
+                        text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                });
+        });
+</script>
+<script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.menu-list').classList.toggle('active');
+        });
+    </script>
+   <script>
+        // Lấy tên file hiện tại từ URL (ví dụ: home.html, info.html)
+        const currentPath = window.location.pathname.split('/').pop() || 'home.html';
+        const menuItems = document.querySelectorAll('.menu');
+
+        // Xóa lớp active khỏi tất cả mục menu
+        menuItems.forEach(item => item.parentElement.classList.remove('active'));
+
+        // Thêm lớp active cho mục menu tương ứng
+        menuItems.forEach(item => {
+            const href = item.getAttribute('href');
+            if (href === currentPath || href === './' + currentPath) {
+                item.parentElement.classList.add('active');
+            }
+        });
+    </script>
+     <button id="backToTop" title="Quay lại đầu trang">↑</button>
+    <script>
+  document.getElementById("backToTop").onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const musicCircle = document.getElementById("musicCircle");
+    const audio = document.getElementById("audio");
+
+    // Load saved audio state from sessionStorage
+    const isPlaying = sessionStorage.getItem("musicPlaying") === "true";
+    const savedTime = parseFloat(sessionStorage.getItem("musicCurrentTime")) || 0;
+
+    // Initialize audio state
+    if (savedTime) {
+        audio.currentTime = savedTime; // Restore playback position
+    }
+
+    if (isPlaying) {
+        audio.play().then(() => {
+            musicCircle.classList.add("spin"); // Resume spinning animation
+        }).catch(error => {
+            console.error("Audio playback failed:", error);
+            // Display the "Click Me" label if playback fails
+            document.querySelector(".lb-circle").style.display = "block";
+        });
+    } else {
+        musicCircle.classList.remove("spin"); // Ensure no spinning if paused
+    }
+
+    // Toggle music playback on click
+    musicCircle.addEventListener("click", toggleMusic);
+
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play().then(() => {
+                musicCircle.classList.add("spin");
+                sessionStorage.setItem("musicPlaying", "true");
+            }).catch(error => {
+                console.error("Audio playback failed:", error);
+            });
+        } else {
+            audio.pause();
+            musicCircle.classList.remove("spin");
+            sessionStorage.setItem("musicPlaying", "false");
+        }
+        // Save current playback time
+        sessionStorage.setItem("musicCurrentTime", audio.currentTime);
+    }
+
+    // Save playback time periodically
+    audio.addEventListener("timeupdate", () => {
+        sessionStorage.setItem("musicCurrentTime", audio.currentTime);
+    });
+
+    // Update playback state on pause/play
+    audio.addEventListener("play", () => {
+        sessionStorage.setItem("musicPlaying", "true");
+    });
+
+    audio.addEventListener("pause", () => {
+        sessionStorage.setItem("musicPlaying", "false");
+    });
+
+    // Handle YouTube video conflicts (if present)
+    if (window.YT && window.YT.Player) {
+        let player;
+        function onYouTubeIframeAPIReady() {
+            player = new window.YT.Player("video", {
+                events: {
+                    onStateChange: onPlayerStateChange,
+                },
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data === window.YT.PlayerState.PLAYING) {
+                if (!audio.paused) {
+                    audio.pause();
+                    musicCircle.classList.remove("spin");
+                    sessionStorage.setItem("musicPlaying", "false");
+                    sessionStorage.setItem("musicCurrentTime", audio.currentTime);
+                }
+            }
+        }
+
+        // Load YouTube API if not already loaded
+        if (!window.YT) {
+            const tag = document.createElement("script");
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName("script")[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        } else if (document.getElementById("video")) {
+            onYouTubeIframeAPIReady();
+        }
+    }
+});
+</script>
+   <script>
+const musicCircle = document.getElementById("musicCircle");
+const audio = document.getElementById("audio");
+const videoIframe = document.getElementById("video");
+
+// Thêm sự kiện khi nhấn vào vòng tròn
+musicCircle.addEventListener("click", toggleMusic);
+
+// Hàm điều khiển việc phát hoặc tạm dừng nhạc
+function toggleMusic() {
+    if (audio.paused) {
+        audio.play(); // Phát nhạc
+        musicCircle.classList.add("spin"); // Bắt đầu xoay
+    } else {
+        audio.pause(); // Dừng nhạc
+        musicCircle.classList.remove("spin"); // Dừng xoay
+    }
+}
+
+// Tạo đối tượng YouTube Player API
+let player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video', {
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+// Lắng nghe sự kiện trạng thái của video
+function onPlayerStateChange(event) {
+    // Khi video bắt đầu phát (state = 1), dừng nhạc và dừng xoay vòng tròn
+    if (event.data === YT.PlayerState.PLAYING) {
+        if (!audio.paused) {
+            audio.pause(); // Dừng nhạc
+            musicCircle.classList.remove("spin"); // Dừng xoay vòng tròn
+        }
+    }
+}
+
+// Tải API YouTube
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+</script>
+<script src="./hau-duy/script.js"></script>
+</body>
+</html>

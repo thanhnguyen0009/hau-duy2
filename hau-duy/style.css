@@ -1099,30 +1099,31 @@ form{
 .schedule-item {
     display: flex;
     align-items: center;
-    justify-content: end;
     width: 100%;
     margin-bottom: 10px;
-    box-sizing: border-box; /* Ensures total width includes padding and borders */
+    box-sizing: border-box;
 }
+
 .bullet {
-    height: 2px;
-    background: #B3B395;
-    flex-grow: .5; /* Grow to fill available space */
-    min-width: 20px; /* Minimum length to ensure visibility */
-    margin-right: 10px;
     height: 7px;
+    background: #B3B395;
+    flex-grow: 1;        /* Kéo dài hết mức có thể */
+    margin-right: 10px;
+    min-width: 30px;     /* Có tối thiểu một chút để không quá nhỏ */
 }
+
 .text {
-  font-family: var(--font-monster);
-  -webkit-text-stroke: .2px var(--primary-color);
-    font-size: .6em;
+    flex-shrink: 0;      /* Không cho phép bị co lại */
+    font-family: var(--font-monster);
+    -webkit-text-stroke: 0.2px var(--primary-color);
+    font-size: 0.6em;
     line-height: 1.5;
     color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bolder;
-    overflow: hidden; /* Prevents text from overflowing */
 }
+
 
 .lb-dot-dichuyen{
   font-size: .4em;
@@ -1137,6 +1138,17 @@ form{
   line-height: 13px;
   letter-spacing: .5px;
   margin-top: 40px;
+  text-align: right;
+}
+
+.p-xacnhan33{
+  font-family: var(--font-monster);
+  font-size: .5em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  line-height: 13px;
+  letter-spacing: .5px;
+  margin-top: 10px;
   text-align: right;
 }
 
@@ -1788,7 +1800,7 @@ input::placeholder{
       font-weight: bold;
     }
     .text{
-      font-size: 6px;
+      font-size: 7px;
       letter-spacing: .2px;
       font-weight: bolder;
     }

@@ -502,7 +502,6 @@ li.active::after {
 
 .img-timeline{
   width: 100%;
-  z-index: 1;
 }
 
 .img-timeline2{
@@ -580,6 +579,11 @@ li.active::after {
 
 /* =========================STORY============================= */
 
+.img-chuyen{
+  width: 50%;
+  margin-top: 20px;
+}
+
 .img-story1{
   width: 10%;
   margin-top: 30px;
@@ -625,6 +629,12 @@ li.active::after {
   letter-spacing: 2px;
   font-size: 1em;
   margin-top: 10px;
+}
+
+.img-kechuyenn{
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 20px;
 }
 
 
@@ -1066,6 +1076,10 @@ form{
   justify-content: center;
   padding: 30px;
   color: var(--primary-color);
+}
+
+.img-xacnhann{
+  width: 100%;
 }
 
 .lb-xacnhan3{
@@ -1794,13 +1808,16 @@ input::placeholder{
       letter-spacing: .1px;
       font-weight: bold;
     }
+    .p-xacnhan2{
+      letter-spacing: .2px;
+    }
     .p-xacnhan4{
       letter-spacing: .2px;
       font-size: 6px;
       font-weight: bold;
     }
     .text{
-      font-size: 7px;
+      font-size: .6em;
       letter-spacing: .2px;
       font-weight: bolder;
     }
@@ -1828,7 +1845,7 @@ input::placeholder{
       font-size: 6px;
     }
     .img-rsvp4{
-      margin-top: 50px;
+      margin-top: 10px;
     }
     .img-note{
       margin-top: 30px;
